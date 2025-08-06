@@ -1,10 +1,12 @@
 import './App.css'
+import ButtonCta from './components/ButtonCta/ButtonCta'
+import Header from './components/Header/Header'
 
 function App() {
 
   return (
     <>
-      <h1>oi</h1>
+      <Header />
     </>
   )
 }
