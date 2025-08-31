@@ -1,28 +1,77 @@
-import React from 'react'
-import { Github, Linkedin, Download } from 'lucide-react';
+import React, { useState } from "react";
+import { Linkedin, Github, Download, Menu} from 'lucide-react'
+import Logo from '../../assets/images/logo512x512.png'
 
-const Header = () => {
+const ResponsiveNavbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    return (
-            <header className="w-screen flex flex-col gap-10  bg-emerald-500 p-4">
-                <div className='main-header flex justify-between'>
-                    <h1 className="text-3xl font-bold text-white">Meu Site</h1>
-                    <nav className='w-32 border-1' >
-                        <ul className="w-full flex-col space-y-8 p-2">
-                            <li className='text-end'><a href="#home"    className="text-white text-2xl font-bold active:text-slate-800 hover:text-black">Home</a></li>
-                            <li className='text-end'><a href="#about"   className="text-white text-2xl font-bold active:text-slate-800 hover:text-black">Sobre</a></li>
-                            <li className='text-end'><a href="#about"   className="text-white text-2xl font-bold active:text-slate-800 hover:text-black">Projetos</a></li>
-                            <li className='text-end'><a href="#contact" className="text-white text-2xl font-bold active:text-slate-800 hover:text-black">Contato</a></li>
-                        </ul>
-                    </nav>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <nav className="bg-gradient-to-tr from-black to-gray-900 p-4 text-emerald-500 border-1 border-danger">
+        <div className="container mx-auto flex items-center justify-between flex-wrap">
+            {/* Marca ou Logo */}
+            <div className="font-bold border-3 border-emerald-500 rounded-full w-15 p-2">
+                <img src={Logo} alt="" />
+            </div>
+
+            {/* Botão para telas pequenas (ícone de hambúrguer) */}
+            <button
+            onClick={toggleMenu}
+            className="md:hidden text-gray-800 focus:outline-none border-4 border-emerald-500 rounded-full p-2"
+            aria-label="Toggle menu"
+            >
+            <Menu className="h-8 w-8 text-emerald-500" />
+            </button>
+
+            {/* Links do Menu */}
+            <div
+            className={`flex flex-col gap-y-9 md:items-center md:w-auto ${
+                isMenuOpen ? "flex" : "hidden"
+            } w-full`}
+            >
+                <div className="text-2xl md:flex-grow">
+                    <a
+                    href="#"
+                    className="block py-2 mt-4 md:inline-block md:mt-0 text-emerald-500 text-left hover:text-gray-400 mr-4"
+                    >
+                    Home
+                    </a>
+                    <a
+                    href="#"
+                    className="block py-2 mt-4 md:inline-block md:mt-0 text-emerald-500 text-left hover:text-gray-400 mr-4"
+                    >
+                    Sobre
+                    </a>
+                    <a
+                    href="#"
+                    className="block py-2 mt-4 md:inline-block md:mt-0 text-emerald-500 text-left hover:text-gray-400 mr-4"
+                    >
+                    Projetos
+                    </a>
+                    <a
+                    href="#"
+                    className="block py-2 mt-4 md:inline-block md:mt-0 text-emerald-500 text-left hover:text-gray-400"
+                    >
+                    Contato
+                    </a>
                 </div>
-                <nav className='flex flex-col items-end gap-5 p-2 border-1'>
-                    <a className='text-end text-xl flex items-center justify-end gap-2 border-2 border-black rounded-full p-2 bg-black' href=""><Github className='bg-black text-white' size={25} /></a>
-                    <a className='text-end text-xl flex items-center justify-end gap-2 border-2 rounded-full p-2' style={{ backgroundColor: '#0077B5', borderColor:'#0077B5' }} href=""><Linkedin style={{ backgroundColor: '#0077B5' }} className='text-white' size={25} /></a>
-                    <button className='w-50 text-end text-xl border-2 rounded-full p-2'>Download Curriculo</button>
-                </nav>
-            </header>
-    )
-}
+                <div className="flex text-left text-md gap-x-5">
+                    <a className="p-2 border-1 rounded-full bg-black border-white"><Github size={28} color="white" /></a>
+                    <a className="p-2 border-1 rounded-md bg-blue-400 border-blue-400 "><Linkedin size={28} color="#d1d5db" /></a>
+                </div>
+                <div>
+                    <button className="w-2/3 flex justify-center items-center gap-x-2 border-2 rounded-lg p-2">
+                        Download Curriculo
+                        <Download size={22} />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+  );
+};
 
-export default Header
+export default ResponsiveNavbar;
