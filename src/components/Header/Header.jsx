@@ -13,7 +13,7 @@ const ResponsiveNavbar = () => {
     <nav className="bg-gradient-to-tr from-black to-gray-900 p-4 text-emerald-500 lg:px-30 lg:py-6 border-1 border-danger">
         <div className="container mx-auto flex items-center justify-between flex-wrap">
             {/* Marca ou Logo */}
-            <div className="font-bold border-3 border-emerald-500 rounded-full w-15 p-4 lg:w-20">
+            <div className="font-bold border-3 border-emerald-500 rounded-full w-15 p-3 lg:w-18">
                 <img src={Logo} alt="" />
             </div>
 
@@ -32,7 +32,7 @@ const ResponsiveNavbar = () => {
                 isMenuOpen ? "flex" : "hidden"
             } w-full`}
             >
-                <div className="text-xl lg:text-2xl lg:flex-grow lg:flex lg:justify-evenly">
+                <div className="text-xl lg:flex-grow lg:flex lg:justify-evenly">
                     <a
                     href="#"
                     className="block py-2 mt-4 lg:inline-block lg:mt-0 text-emerald-500 text-left hover:text-gray-400 mr-4"
