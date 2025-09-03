@@ -1,12 +1,11 @@
 import './App.css'
-import ButtonCta from './components/ButtonCta/ButtonCta'
-import Header from './components/Header/Header'
+import Home from './pages/Homepage/Home.jsx'
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Home />
     </>
   )
 }
