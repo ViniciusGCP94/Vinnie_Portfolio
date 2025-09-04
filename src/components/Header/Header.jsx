@@ -22,7 +22,7 @@ const ResponsiveNavbar = () => {
             />
         )}
 
-        <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-tr from-black to-gray-900 p-4 text-emerald-500 lg:px-30 lg:py-6 border-1 border-danger">
+        <nav className=" fixed top-0 left-0 w-full z-50 bg-gradient-to-tr from-black to-gray-900 p-4 text-emerald-500 lg:px-30 lg:py-6 border-1 border-danger">
             <div className="container mx-auto flex items-center justify-between flex-wrap">
                 {/* Marca ou Logo */}
                 <div className="font-bold border-3 border-emerald-500 rounded-full w-15 p-3 lg:w-18">
