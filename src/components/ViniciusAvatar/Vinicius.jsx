@@ -7,7 +7,7 @@ const HomeAvatar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(250px, 40vw, 300px);
+  width: clamp(200px, 40vw, 300px);
   margin-bottom: min(60px, 5%);
   margin-top: 8%;
 `;
@@ -61,7 +61,7 @@ const HexagonalAvatar = () => {
           <AvatarContainer>
             <AvatarImage 
               src={vinnie}
-              alt="Vinícius" 
+              alt="Vinícius Pereira" 
             />
           </AvatarContainer>
         </AvatarWrapper>
