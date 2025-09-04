@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import vinnie from '../../assets/images/portfolio-image.jpg';
+import vinnie from '../../../assets/images/portfolio-image.jpg';
 
 // Container principal do avatar
 const HomeAvatar = styled.div`

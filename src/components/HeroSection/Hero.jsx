@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import Avatar from '../../components/ViniciusAvatar/Vinicius.jsx'
+import Avatar from './ViniciusAvatar/Vinicius'
 
 const Hero = () => {
     const words = ['Front-End', 'Web', 'JavaScript'];
@@ -14,11 +14,11 @@ const Hero = () => {
         return () => {
             clearInterval(wordInterval);
         };
-    }, []);
+    }, [words.length]);
     
 
     return (
-        <section className="border-1 border-danger pt-24 px-6 min-h-screen flex flex-col items-center bg-gradient-to-tr from-black to-gray-900 text-emerald-500 lg:flex-row-reverse lg:justify-between lg:pb-20 lg:px-32 lg:max-h-full lg:pt-60">
+        <section className="border-1 border-danger pt-24 pb-5 px-6 min-h-screen flex flex-col items-center bg-gradient-to-tr from-black to-gray-900 text-emerald-500 lg:flex-row-reverse lg:justify-between lg:pb-20 lg:px-32 lg:max-h-full lg:pt-60">
             <Avatar />
             <div className="container mx-auto text-center text-gray-200 lg:w-3/5 lg:text-left lg:ms-0">
                 <h1 className="text-4xl lg:text-6xl font-bold mb-6">Olá, sou Vinicius!</h1>
