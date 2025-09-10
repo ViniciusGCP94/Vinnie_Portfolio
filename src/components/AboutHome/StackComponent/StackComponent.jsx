@@ -7,7 +7,7 @@ const StackComponent = () => {
 
     return (
         <>
-            
+
         </>
     )
 }
