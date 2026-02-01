@@ -1,5 +1,6 @@
 import './App.css'
-import About from './components/AboutHome/About.jsx'
+import About from './components/sections/AboutHome/About.jsx'
+import ProjectCard from './components/ProjectCard/ProjectCard.jsx'
 import Home from './pages/Homepage/Home.jsx'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Home />
       <About />
+      <ProjectCard />
     </>
   )
 }

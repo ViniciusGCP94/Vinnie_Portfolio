@@ -1,9 +1,6 @@
 import React from 'react'
-import Html5 from '../../assets/images/html.png'
-import Css3 from '../../assets/images/css_3.png'
-import Javascript from '../../assets/images/js.png'
-import ReactJS from '../../assets/images/reactjs.svg'
-import Dev from '../../assets/images/devprofile.png'
+import Dev from '../../../assets/images/devprofile.png'
+import Stacks from '../../common/StackComponent/StackComponent.jsx';
 
 const About = () => {
 
@@ -13,16 +10,14 @@ const About = () => {
             <div className='flex flex-col gap-20'>
                 <div className='w-full flex flex-col gap-10'>
                     <p className='text-lg'>Olá! Meu nome é Vinícius Pereira, sou estudante de Análise e Desenvolvimento de Sistemas e um entusiasta do Desenvolvimento Web Front-End. Desde que comecei a estudar programação, fiquei fascinado com a possibilidade de criar interfaces funcionais e atraentes que proporcionem uma ótima experiência ao usuário. Meu objetivo é contribuir para projetos desafiadores enquanto desenvolvo minhas habilidades técnicas e colaborativas.</p>
-                    <ul className='flex text-emerald-50 text-sm text-center items-end'>
-                        <li className='w-1/4 p-2 '><img src={Html5} alt="html5 logo" /> Html 5</li>
-                        <li className='w-1/4 p-2 '><img src={Css3} alt="css3 logo " />Css 3</li>
-                        <li className='w-1/4 p-2 '><img src={Javascript} alt="javascript" />Javascript</li>
-                        <li className='w-1/4 p-2 '><img src={ReactJS} alt="ReactJS" />React</li>
-                    </ul>
+                    <div>
+                        <img src={Dev} alt="" />
+                    </div>
                 </div>
                 <div>
-                    <img src={Dev} alt="" />
+                    <Stacks />
                 </div>
+                
             </div>
                 
         </section>

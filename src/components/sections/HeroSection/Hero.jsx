@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import Avatar from './ViniciusAvatar/Vinicius'
+import Avatar from '../../ViniciusAvatar/Vinicius'
 
 const Hero = () => {
     const words = ['Front-End', 'Web', 'JavaScript'];
@@ -27,7 +27,7 @@ const Hero = () => {
                 <p className=" tracking-wide leading-relaxed text-emerald-50 text-lg mb-6 max-w-lg mx-auto lg:mx-0 lg:text-xl lg:max-w-full">Escrevendo código não! Construindo projetos. Da validação de cartões de crédito à criação de experiências com IA, o meu portfólio demonstra o meu entusiasmo por construir a web na prática.</p>
                 <p className='text-lg mb-6'>Qualidade, Proatividade, Fundamentos</p>
 
-                <a href="#projetos" className="inline-block bg-emerald-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-emerald-600 hover:shadow-[5px_5px_10px_rgba(4,_255,_140,_0.5)] transition duration-300">Ver Projetos</a>
+                <a href="#projetos" className="inline-block bg-transparent text-emerald-500 border-4 border-e-emerald-500 font-bold py-3 px-6 rounded-lg hover:bg-emerald-600 hover:shadow-[5px_5px_10px_rgba(4,_255,_140,_0.5)] transition duration-300">Ver Projetos</a>
             </div>
         </section> 
     )
