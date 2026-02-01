@@ -1,49 +1,113 @@
 import { useEffect, useState } from "react";
-import { getRepos } from "../../services/githubService"
+import { getRepos } from "../../services/githubService";
+import { TechSkills } from "../../data/TechSkills";
 
 const ProjectCard = () => {
     const [repos, setRepos] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    const getSkillData = (tagName) => {
+        return TechSkills.find(
+            (s) => s.name.toLowerCase() === tagName.toLowerCase()
+        );
+    };
+
+    const formatTitle = (repoName) => {
+        return repoName
+            .toLowerCase()      
+            .replace(/_/g, ' ')      
+            .replace(/\b\w/g, l => l.toUpperCase()); 
+    };
 
     useEffect(() => {
-        getRepos().then(response => setRepos(response.data));
+        const fetchProjects = async () => {
+            try {
+                const response = await getRepos();
+                const featured = response.data.filter(repo => repo.topics.includes("portfolio"));
+                setRepos(featured);
+            } catch (error) {
+                console.error("Erro ao carregar projetos:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchProjects();
     }, []);
 
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center h-40">
+                <p className="text-white animate-pulse text-xl">Carregando projetos do GitHub...</p>
+            </div>
+        );
+    }
+
     return (
-            <>
+        <>
             {repos.map((projeto) => (
-                <div key={projeto.id} className="border-1 border-danger w-full h-full flex px-4 bg-gray text-gray-300 p-20 text-center justify-center">
-                    <div className='w-1/2 border'>
-                        <img src="#" alt="Project Image" />
-                    <h2>Project</h2>
-                </div>
+                <div key={projeto.id} className="border-1 border-danger w-full flex flex-col md:flex-row px-4 bg-gray text-gray-300 p-10 lg:p-20 text-center justify-center mb-10 gap-10"> 
+                    
+                    <div className='w-full md:w-1/2 border border-gray-700 p-2'>
+                        <img 
+                          src={`https://raw.githubusercontent.com/ViniciusGCP94/${projeto.name}/main/capa.png`} 
+                          onError={(e) => { e.target.src = 'https://via.placeholder.com/400x225?text=Sem+Capa' }}
+                          alt={`Capa do projeto ${projeto.name}`}
+                          className="w-full h-auto object-cover"
+                        />
+                        <h2 className="text-2xl font-bold mt-4 tracking-wider">{formatTitle(projeto.name)}</h2>
+                    </div>
+
+                    <div className='w-full md:w-1/2 border border-gray-700 px-8 py-6 flex flex-col justify-between text-left'>
+                        <div>
+                            <p className="text-lg leading-relaxed mb-6">
+                                {projeto.description || "Este projeto ainda não possui uma descrição no GitHub."}
+                            </p>
+                            
+                            <div className='flex flex-wrap justify-start gap-6 mb-8'>
+                                {projeto.topics && projeto.topics.map(tag => {
+                                    const skill = getSkillData(tag);
+                                    if (!skill) return null;
+                                    return (
+                                        <div key={tag} className="flex flex-col items-center gap-2 group">
+                                            {skill ? (
+                                                <skill.icon size={30} className="group-hover:text-danger transition-colors" />
+                                            ) : (
+                                                <div className="w-[30px] h-[30px] bg-gray-600 rounded-full" />
+                                            )}
+                                            <p className="text-[10px] uppercase font-bold tracking-tighter">
+                                                {skill ? skill.name : tag}
+                                            </p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                        <div className='flex gap-5 mt-auto'>
+                            <a 
+                                href={projeto.html_url} 
+                                target="_blank" 
+                                rel="noreferrer" 
+                                className="bg-white text-black px-6 py-2 rounded font-bold hover:bg-danger hover:text-white transition-all duration-300"
+                            >
+                                GITHUB
+                            </a>
+                            {projeto.homepage && (
+                                <a 
+                                    href={projeto.homepage} 
+                                    target="_blank" 
+                                    rel="noreferrer" 
+                                    className="border border-white px-6 py-2 rounded font-bold hover:bg-white hover:text-black transition-all duration-300"
+                                >
+                                    WEB
+                                </a>
+                            )}
+                        </div>
+                    </div>
                 </div>
             ))}
-                
-                
-                <div className='w-1/2 border px-8 py-4'>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, autem enim, eligendi eius culpa officia doloribus natus quaerat eveniet recusandae sequi! Sequi aliquam ex consequuntur quas eligendi accusamus, aut facilis?</p>
-                    <div className='flex justify-start gap-5'>
-                        <div>
-                            <i></i>
-                            <p>Stack 1</p>
-                        </div>
-                        <div>
-                            <i></i>
-                            <p>Stack 2</p>
-                        </div>
-                        <div>
-                            <i></i>
-                            <p>Stack 3</p>
-                        </div>
-                    </div>
-                    <div className='flex gap-5'>
-                        <button>github</button>
-                        <button>web</button>
-                    </div>
-                </div>
-            
         </>
-    )
-}
+    );
+};
 
-export default ProjectCard
+export default ProjectCard;
