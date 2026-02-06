@@ -9,10 +9,21 @@ headers: {'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
 
     export async function getRepos(){
         try {
-            return await githubService.get('/users/ViniciusGCP94/repos')
+            const response = await githubService.get('/users/ViniciusGCP94/repos');
+            return response;
         } catch (error) {
             console.error("Erro ao buscar repositórios:", error)
             throw error
+        }
+    }
+
+    export async function getRepoLanguages(repoName){
+        try {
+            const response = await githubService.get(`/repos/ViniciusGCP94/${repoName}/languages`)
+            return response;
+        } catch (error) {
+            console.error(`Erro ao buscar linguagens do repositório ${repoName}:`, error)
+            return {data: {} };
         }
     }
 

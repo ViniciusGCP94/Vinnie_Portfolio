@@ -48,14 +48,19 @@ const ProjectCard = () => {
             {repos.map((projeto) => (
                 <div key={projeto.id} className="border-1 border-danger w-full flex flex-col md:flex-row px-4 bg-gray text-gray-300 p-10 lg:p-20 text-center justify-center mb-10 gap-10"> 
                     
-                    <div className='w-full md:w-1/2 border border-gray-700 p-2'>
+                    <div className='w-full md:w-1/2 relative h-[300px] lg:h-[350px] overflow-hidden group border border-gray-700 rounded-2xl p-2'>
                         <img 
                           src={`https://raw.githubusercontent.com/ViniciusGCP94/${projeto.name}/main/capa.png`} 
                           onError={(e) => { e.target.src = 'https://via.placeholder.com/400x225?text=Sem+Capa' }}
                           alt={`Capa do projeto ${projeto.name}`}
-                          className="w-full h-auto object-cover"
+                          className="w-full h-full absolute inset-0 transition-transform duration-500 group-hover:scale-120 object-cover"
                         />
-                        <h2 className="text-2xl font-bold mt-4 tracking-wider">{formatTitle(projeto.name)}</h2>
+
+                        <div className="absolute inset-0 bg-black/80 group-hover:bg-black/50 transition-colors duration-500"></div>
+                        <div className="absolute inset-0 flex items-center justify-center p-4">
+                             <h2 className="text-gray-200 text-2xl lg:text-3xl font-bold uppercase tracking-widest text-center drop-shadow-lg transform transition-transform duration-500 group-hover:scale-105 group-hover:text-gray-100">{formatTitle(projeto.name)}</h2>
+                        </div>
+                       
                     </div>
 
                     <div className='w-full md:w-1/2 border border-gray-700 px-8 py-6 flex flex-col justify-between text-left'>
