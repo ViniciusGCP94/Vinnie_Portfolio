@@ -1,5 +1,5 @@
 import { useProjects } from "../../hooks/useProjects";
-import LoadingSpinner from "../common/LoadingSpinner";
+import LoadingSpinner from "../common/LoadingSpinner/LoadingSpinner";
 import ProjectItem from "./ProjectItem";
 
 const ProjectCard = () => {
