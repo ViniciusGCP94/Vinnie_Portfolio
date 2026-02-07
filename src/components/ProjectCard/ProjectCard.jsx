@@ -1,11 +1,11 @@
-// ↓ TROCAR ESSES IMPORTS
 import { useProjects } from "../../hooks/useProjects";
 import { formatRepoTitle, getProjectImageUrl, PLACEHOLDER_IMAGE } from "../../utils/formatters";
 import { TechSkills } from "../../data/TechSkills";
+import LoadingSpinner from "../common/LoadingSpinner/LoadingSpinner";
 
 const ProjectCard = () => {
     const { projects, loading } = useProjects();
-    
+
     const getSkillData = (tagName) => {
         return TechSkills.find(
             (s) => s.name.toLowerCase() === tagName.toLowerCase()
@@ -13,11 +13,7 @@ const ProjectCard = () => {
     };
 
     if (loading) {
-        return (
-            <div className="flex justify-center items-center h-40">
-                <p className="text-white animate-pulse text-xl">Carregando projetos do GitHub...</p>
-            </div>
-        );
+        return <LoadingSpinner message="Carregando projetos do GitHub..." />;
     }
 
     return (

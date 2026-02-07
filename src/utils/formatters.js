@@ -5,6 +5,8 @@ export const formatRepoTitle = (repoName) => {
         .replace(/\b\w/g, l => l.toUpperCase());
 };
 
+
+
 export const getProjectImageUrl = (repoName) => {
     return `https://raw.githubusercontent.com/ViniciusGCP94/${repoName}/main/capa.png`;
 };
