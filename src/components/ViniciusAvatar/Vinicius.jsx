@@ -2,17 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import vinnie from '../../assets/images/portfolio-image.jpg';
 
-// Container principal do avatar
 const HomeAvatar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(200px, 40vw, 300px);
-  margin-bottom: min(60px, 5%);
-  margin-top: 8%;
+  width: clamp(280px, 40vw, 380px);
+  margin-bottom: 0;
+  margin-top: 0;
+  filter: drop-shadow(0 0 40px rgba(4, 255, 140, 0.2));
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 10;
+
+  &:hover {
+    filter: drop-shadow(0 0 60px rgba(4, 255, 140, 0.5));
+    transform: scale(1.02);
+  }
 `;
 
-// Wrapper que aplica o clip-path
 const AvatarWrapper = styled.div`
   clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
   position: relative;
@@ -20,16 +27,15 @@ const AvatarWrapper = styled.div`
   aspect-ratio: 1;
 `;
 
-// Container com a borda verde
 const AvatarContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 12px;
   box-shadow: none;
-  background: #04ff8c;
+  background: linear-gradient(135deg, #04ff8c, #06b6d4);
+  position: relative;
 `;
 
-// Imagem do avatar
 const AvatarImage = styled.img`
   width: 100%;
   height: 100%;
@@ -37,7 +43,6 @@ const AvatarImage = styled.img`
   clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
 `;
 
-// SVG invisível para definir o clip-path (caso necessário)
 const ClipPathSVG = styled.svg`
   position: absolute;
   width: 0;
