@@ -5,21 +5,22 @@ import Stacks from '../../common/StackComponent/StackComponent.jsx';
 const About = () => {
 
     return (
-        <section className='border-1 border-danger w-full h-full flex flex-col px-4 bg-gray text-gray-300 p-20 text-center justify-center'>
-            <h1 className='bg-gradient-to-r text-4xl from-emerald-500 to-gray-200 text-transparent bg-clip-text font-bold mb-8 mx-auto w-fit lg:text-6xl'>Sobre</h1>
-            <div className='flex flex-col gap-20'>
-                <div className='w-full flex flex-col gap-10'>
-                    <p className='text-lg'>Olá! Meu nome é Vinícius Pereira, sou estudante de Análise e Desenvolvimento de Sistemas e um entusiasta do Desenvolvimento Web Front-End. Desde que comecei a estudar programação, fiquei fascinado com a possibilidade de criar interfaces funcionais e atraentes que proporcionem uma ótima experiência ao usuário. Meu objetivo é contribuir para projetos desafiadores enquanto desenvolvo minhas habilidades técnicas e colaborativas.</p>
-                    <div>
-                        <img src={Dev} alt="" />
+        <section className="w-full min-h-screen flex flex-col px-4 bg-gradient-to-b from-gray-900 to-black text-gray-300 py-32 lg:py-40 text-center justify-center max-w-7xl mx-auto">
+            <h1 className="text-5xl lg:text-7xl font-black font-display mb-16 text-white relative inline-block">Sobre</h1>
+            <div className="flex flex-col gap-20 lg:gap-32">
+                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <p className="text-xl lg:text-2xl leading-relaxed text-gray-300 text-left font-normal">Olá! Meu nome é Vinícius Pereira, sou estudante de Análise e Desenvolvimento de Sistemas e um entusiasta do Desenvolvimento Web Front-End. Desde que comecei a estudar programação, fiquei fascinado com a possibilidade de criar interfaces funcionais e atraentes que proporcionem uma ótima experiência ao usuário. Meu objetivo é contribuir para projetos desafiadores enquanto desenvolvo minhas habilidades técnicas e colaborativas.</p>
+                    <div className="relative group">
+                        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                        <div className="relative border-2 border-emerald-500/20 rounded-2xl overflow-hidden shadow-2xl shadow-black/50 hover:shadow-emerald-500/20 transition-all duration-500 hover:-translate-y-2">
+                            <img src={Dev} alt="Vinícius Pereira" className="w-full h-auto" />
+                        </div>
                     </div>
                 </div>
                 <div>
                     <Stacks />
                 </div>
-                
-            </div>
-                
+            </div>    
         </section>
     )
 }
