@@ -1,12 +1,12 @@
 // Componente dos botões (GitHub e Web)
 const ProjectLinks = ({ githubUrl, websiteUrl }) => {
     return (
-        <div className='flex gap-5 mt-auto'>
+        <div className='flex gap-6 mt-auto'>
             <a 
                 href={githubUrl} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="bg-white text-black px-6 py-2 rounded font-bold hover:bg-danger hover:text-white transition-all duration-300"
+                className="border-2 border-emerald-500 text-emerald-500 px-8 py-3 rounded-xl font-bold hover:bg-emerald-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/50 hover:-translate-y-1"
             >
                 GITHUB
             </a>
@@ -16,7 +16,7 @@ const ProjectLinks = ({ githubUrl, websiteUrl }) => {
                     href={websiteUrl} 
                     target="_blank" 
                     rel="noreferrer" 
-                    className="border border-white px-6 py-2 rounded font-bold hover:bg-white hover:text-black transition-all duration-300"
+                    className="border-2 border-emerald-500 text-emerald-500 px-8 py-3 rounded-xl font-bold hover:bg-emerald-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/50 hover:-translate-y-1"
                 >
                     WEB
                 </a>
