@@ -37,9 +37,9 @@ const ProjectItem = ({ project }) => {
         >
             <ProjectImage projectName={project.name} />
 
-            <div className="w-full md:w-1/2 border border-emerald-500/10 px-10 py-8 flex flex-col justify-between text-left rounded-2xl bg-black/20 backdrop-blur-sm">
+            <div className="w-full md:w-1/2 border border-emerald-500/10 px-5 py-8 flex flex-col justify-around items-center lg:items-start text-left rounded-2xl bg-black/20 backdrop-blur-sm">
                 <div>
-                    <p className="text-xl leading-relaxed mb-8 text-gray-300 font-normal min-h-[100px]">
+                    <p className="text-xl text-center lg:text-start leading-relaxed mb-8 text-gray-300 font-normal min-h-[100px]">
                         {displayText}
                         {isHovered && !isComplete && (
                             <span className="inline-block w-0.5 h-6 ml-1 bg-emerald-500 animate-pulse"></span>

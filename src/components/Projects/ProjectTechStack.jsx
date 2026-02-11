@@ -13,7 +13,7 @@ const ProjectTechStack = ({ topics, showIcons = false }) => {
     }
 
     return (
-        <div className="flex flex-wrap justify-start gap-8 mb-10">
+        <div className="flex flex-wrap justify-center lg:justify-start gap-8 mb-10 lg:mb-5">
             {topics.map((tag, index) => {
                 const skill = getSkillData(tag);
                 

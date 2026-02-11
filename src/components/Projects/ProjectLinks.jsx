@@ -1,6 +1,6 @@
 const ProjectLinks = ({ githubUrl, websiteUrl, showButtons = false }) => {
     return (
-        <div className="flex gap-6 mt-auto">
+        <div className="flex gap-6 m-0">
             <a 
                 href={githubUrl} 
                 target="_blank" 
