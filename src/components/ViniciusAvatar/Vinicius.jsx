@@ -36,7 +36,11 @@ const AvatarContainer = styled.div`
   position: relative;
 `;
 
-const AvatarImage = styled.img`
+const AvatarImage = styled.img.attrs(props => ({
+  width: props.width || "448",
+  height: props.height || "448",
+  fetchpriority: props.fetchpriority || "high" 
+}))`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -66,7 +70,10 @@ const HexagonalAvatar = () => {
           <AvatarContainer>
             <AvatarImage 
               src={vinnie}
-              alt="Vinícius Pereira" 
+              alt="Vinícius Pereira"
+              width="448" 
+              height="448"
+              fetchpriority="high" 
             />
           </AvatarContainer>
         </AvatarWrapper>
