@@ -20,7 +20,7 @@ const Hero = () => {
         <section className="pt-32 pb-20 px-4 min-h-screen flex flex-col items-center bg-gradient-to-tr from-black to-gray-900 text-emerald-500 lg:flex-row-reverse lg:justify-between lg:px-32 lg:pt-40 relative overflow-hidden bg-grid-pattern">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-gradient-radial from-emerald-500/8 to-transparent pointer-events-none"></div>
   
-            <Avatar />
+            <Avatar fetchpriority="high" />
             <div className="container mx-auto text-center text-white tracking-tighter lg:w-3/5 lg:text-left lg:ms-0">
                 <h1 className="text-5xl lg:text-7xl font-black font-display mb-6 leading-none tracking-tight drop-shadow-[0_0_40px_rgba(4,255,140,0.2)] relative z-10">Olá, sou Vinícius!</h1>
                 <h2 className="bg-gradient-to-r from-emerald-500 via-cyan-500 to-purple-500 text-transparent bg-clip-text text-3xl text-center lg:w-fit font-black font-display mb-8 lg:text-5xl bg-[length:200%_200%] animate-gradient-shift relative z-10">Desenvolvedor {''}

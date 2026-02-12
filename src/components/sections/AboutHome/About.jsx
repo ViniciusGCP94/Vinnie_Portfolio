@@ -18,7 +18,7 @@ const About = () => {
                     <div className="relative group max-w-md mx-auto lg:mr-0">
                         <div className="absolute -inset-2 bg-gradient-to-r from-[#04ff8c]/40 to-cyan-500/40 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                         <div className="relative border-2 border-emerald-500/20 rounded-2xl overflow-hidden shadow-2xl shadow-black/50 hover:shadow-emerald-500/20 transition-all duration-500 hover:-translate-y-2">
-                            <img src={Dev} alt="Vinícius Pereira" className="w-full h-auto" />
+                            <img src={Dev} alt="Vinícius Pereira" width="450" height="450" fetchpriority="high" className="w-full h-auto" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
                         </div>
                     </div>
