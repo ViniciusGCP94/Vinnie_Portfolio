@@ -1,6 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
-import vinnie from '../../assets/images/portfolio-image.jpg';
+import vinnie from '../../assets/images/portfolio-image.webp';
 
 const HomeAvatar = styled.div`
   display: flex;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {Github,Linkedin, Download, Menu} from 'lucide-react'
-import Logo from '../../assets/images/logo512x512.png'
+import Logo from '../../assets/images/logo-VP.webp'
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
