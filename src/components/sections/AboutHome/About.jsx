@@ -1,4 +1,4 @@
-import Dev from '../../../assets/images/devprofile.png'
+import Dev from '../../../assets/images/devprofile.webp'
 import Stacks from '../../common/StackComponent/StackComponent.jsx';
 
 const About = () => {
