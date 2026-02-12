@@ -8,7 +8,7 @@ const About = () => {
             
             <div className="flex flex-col gap-12 lg:gap-20">
                 
-                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
                     <p className="text-xl lg:text-4xl leading-relaxed text-gray-200 text-left font-medium">
                         Olá! Eu sou o <span className="text-emerald-400 font-bold">Vinícius Pereira</span>, 
                         estudante de Análise e Desenvolvimento de Sistemas e apaixonado pelo ecossistema 
