@@ -1,4 +1,4 @@
-import Dev from '../../../assets/images/devprofile.webp'
+import Dev from '../../../assets/images/devprofile-digitando.webp'
 import Stacks from '../../common/StackComponent/StackComponent.jsx';
 
 const About = () => {
