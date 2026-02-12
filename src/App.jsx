@@ -1,22 +1,17 @@
-import { Suspense, lazy } from 'react';
 import './App.css'
+import About from './components/sections/AboutHome/About.jsx'
+import ProjectCard from './components/Projects/ProjectCard.jsx'
 import Home from './pages/Homepage/Home.jsx'
-
-const About = lazy(() => import('./components/sections/AboutHome/About.jsx'));
-const ProjectCard = lazy(() => import('./components/Projects/ProjectCard.jsx'));
-const Contact = lazy(() => import('./components/sections/Forms/ContactForm.jsx'));
+import Contact from './components/sections/Forms/ContactForm.jsx'
 
 function App() {
-
   return (
     <>
       <Home />
-      <Suspense fallback={<div className="bg-black h-20" />}></Suspense>
       <About />
       <ProjectCard />
       <Contact />
     </>
   )
 }
-
 export default App
