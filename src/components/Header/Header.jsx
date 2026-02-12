@@ -30,7 +30,7 @@ const ResponsiveNavbar = () => {
                         width="60" 
                         height="60" 
                         fetchpriority="high" 
-                        className="w-[60px] h-[60px] object-contain"
+                        className="w-full h-full object-contain"
                     />
                 </div>
 
