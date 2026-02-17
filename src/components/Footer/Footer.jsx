@@ -20,7 +20,11 @@ const Footer = () => {
                     
                     <div className="flex flex-col items-center md:items-start gap-4">
                         <div className="w-16 h-16 rounded-full border-3 border-emerald-500 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 hover:scale-105 transition-all duration-300">
-                            <span className="text-3xl font-black font-display text-emerald-500">VP</span>
+                            <img 
+                                src="/src/assets/images/logo-VP.webp" 
+                                alt="Logo Vinícius Pereira" 
+                                className="w-full h-full object-contain rounded-full" 
+                            />
                         </div>
                         <div className="text-center md:text-left">
                             <p className="text-gray-400 font-body text-sm">
