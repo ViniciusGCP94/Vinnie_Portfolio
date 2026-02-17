@@ -29,7 +29,7 @@ const ResponsiveNavbar = () => {
                         alt="Logo VP Websites" 
                         width="60" 
                         height="60" 
-                        fetchpriority="high" 
+                        fetchPriority="high" 
                         className="w-full h-full object-contain"
                     />
                 </div>

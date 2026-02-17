@@ -38,7 +38,6 @@ const AvatarContainer = styled.div`
 const AvatarImage = styled.img.attrs(props => ({
   width: props.width || "448",
   height: props.height || "448",
-  fetchpriority: props.fetchpriority || "high" 
 }))`
   width: 100%;
   height: 100%;
@@ -72,7 +71,7 @@ const HexagonalAvatar = () => {
               alt="Vinícius Pereira"
               width="448" 
               height="448"
-              fetchpriority="high" 
+              $fetchPriority="high" 
             />
           </AvatarContainer>
         </AvatarWrapper>

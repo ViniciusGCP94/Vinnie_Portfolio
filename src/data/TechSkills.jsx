@@ -9,7 +9,9 @@ import {
     SiGithub,
     SiVercel ,
     SiVite,
-    SiDatabricks
+    SiDatabricks,
+    SiGmail,
+    SiLinkedin
 } from "react-icons/si";
 import { 
     LuBrainCircuit,
@@ -35,4 +37,6 @@ export const TechSkills = [
     { ID: 13, name: "validation", icon: LuShieldCheck },
     { ID: 14, name: "luhn-algorithm", icon: LuCpu },
     { ID: 15, name: "credit-card", icon: LuCreditCard },
+    { ID: 16, name: "Gmail", icon: SiGmail },
+    { ID: 17, name: "Linkedin", icon: SiLinkedin },
 ];
