@@ -10,9 +10,8 @@ const About = () => {
                 
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
                     <p className="text-xl lg:text-4xl leading-relaxed text-gray-200 text-left font-medium">
-                        Olá! Eu sou o <span className="text-emerald-400 font-bold">Vinícius Pereira</span>, 
-                        estudante de Análise e Desenvolvimento de Sistemas e apaixonado pelo ecossistema 
-                        <span className="text-cyan-400 font-bold"> Front-End</span>.
+                        Desenvolvedor <span className="text-emerald-400 font-bold">Front-End</span>, 
+                        focado em <span className="text-cyan-400 font-bold"> React</span>, transformando ideias em experiências digitais que as pessoas realmente gostam de usar.
                     </p>
 
                     <div className="relative group max-w-md mx-auto lg:mr-0">
@@ -26,13 +25,13 @@ const About = () => {
 
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                     <p className="text-lg lg:text-xl leading-relaxed text-gray-400 text-left">
-                        Minha jornada na programação é movida pela curiosidade de transformar linhas de código em 
-                        <span className="text-white border-b border-emerald-500/50"> interfaces funcionais e atraentes</span>. 
-                        Acredito que o design e a performance devem caminhar juntos para criar experiências memoráveis.
+                        Especializado em criar <span className="text-white border-b border-emerald-500/50"> interfaces responsivas e performáticas </span>. 
+                        com React, JavaScript moderno e integração com APIs. 
+                        Meus projetos demonstram desde CRUDs completos até aplicações com Inteligência Artificial.
                     </p>
                     
                     <p className="flex items-center text-lg lg:text-xl leading-relaxed text-gray-400 text-left italic border-l-4 border-emerald-500 pl-6 py-2 bg-white/5 rounded-r-xl">
-                        "Meu objetivo é contribuir em projetos desafiadores, unindo rigor técnico e colaboração para construir o futuro da web."
+                        "Busco minha primeira oportunidade como desenvolvedor Front-End para aplicar meus conhecimentos, aprender com profissionais experientes e contribuir com código de qualidade."
                     </p>
                 </div>
 
