@@ -1,5 +1,5 @@
-// src/components/sections/Footer/Footer.jsx
 import { TechSkills } from '../../data/TechSkills';
+import Logo from '../../assets/images/logo-VP.webp'
 
 const Footer = () => {
     const GitHubIcon = TechSkills.find(s => s.name === "Github")?.icon;
@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="flex flex-col items-center md:items-start gap-4">
                         <div className="w-16 h-16 rounded-full border-3 border-emerald-500 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 hover:scale-105 transition-all duration-300">
                             <img 
-                                src="/src/assets/images/logo-VP.webp" 
+                                src={Logo}
                                 alt="Logo Vinícius Pereira" 
                                 className="w-full h-full object-contain rounded-full" 
                             />
