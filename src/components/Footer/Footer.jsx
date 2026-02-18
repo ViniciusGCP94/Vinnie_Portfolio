@@ -1,5 +1,5 @@
 import { TechSkills } from '../../data/TechSkills';
-import Logo from '../../assets/images/logo-VP.webp'
+import Logo from '../../assets/images/logo-VP.webp';
 
 const Footer = () => {
     const GitHubIcon = TechSkills.find(s => s.name === "Github")?.icon;
