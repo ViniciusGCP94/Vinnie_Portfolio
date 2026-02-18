@@ -49,25 +49,29 @@ const ResponsiveNavbar = () => {
                 >
                     <div className="text-xl lg:flex-grow lg:flex lg:justify-evenly">
                         <a
-                            href="#"
+                            href="#home"
+                            onClick={closeMenu}
                             className="block py-2 mt-4 lg:inline-block lg:mt-0 text-white text-left hover:text-emerald-500 mr-4 font-semibold transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-emerald-500 after:to-cyan-500 hover:after:w-full after:transition-all after:duration-300"
                         >
                         Home
                         </a>
                         <a
-                            href="#"
+                            href="#about"
+                            onClick={closeMenu}
                             className="block py-2 mt-4 lg:inline-block lg:mt-0 text-white text-left hover:text-emerald-500 mr-4 font-semibold transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-emerald-500 after:to-cyan-500 hover:after:w-full after:transition-all after:duration-300"
                         >
                         Sobre
                         </a>
                         <a
-                            href="#"
+                            href="#projects"
+                            onClick={closeMenu}
                             className="block py-2 mt-4 lg:inline-block lg:mt-0 text-white text-left hover:text-emerald-500 mr-4 font-semibold transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-emerald-500 after:to-cyan-500 hover:after:w-full after:transition-all after:duration-300"
                         >
                         Projetos
                         </a>
                         <a
-                            href="#"
+                            href="#contact"
+                            onClick={closeMenu}
                             className="block py-2 mt-4 lg:inline-block lg:mt-0 text-white text-left hover:text-emerald-500 mr-4 font-semibold transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-emerald-500 after:to-cyan-500 hover:after:w-full after:transition-all after:duration-300"
                         >
                         Contato

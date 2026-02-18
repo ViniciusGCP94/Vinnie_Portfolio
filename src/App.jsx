@@ -8,11 +8,11 @@ import Footer from './components/Footer/Footer.jsx'
 function App() {
   return (
     <>
-      <Home />
-      <About />
-      <ProjectCard />
-      <Contact />
-      <Footer />
+      <section id="home"><Home /></section>
+      <section id="about"><About /></section>
+      <section id="projects"><ProjectCard /></section>
+      <section id="contact"><Contact /></section>
+      <section id="footer"><Footer /></section>
     </>
   )
 }
