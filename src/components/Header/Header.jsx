@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {Github,Linkedin, Download, Menu} from 'lucide-react'
-import Logo from '../../assets/images/logo-VP.webp'
+import Logo from '../../assets/images/Logo-VP-Quadrado.webp'
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,13 +24,13 @@ const ResponsiveNavbar = () => {
 
         <nav className=" fixed top-0 left-0 w-full z-50 p-4 text-emerald-500 bg-[#0a0a0a] lg:bg-[#0a0a0a]/80 lg:backdrop-blur-md border-b border-[#04ff8c]/20 shadow-[0_4px_30px_rgba(0,0,0,0.1)] lg:px-30 lg:py-4 border-1 ">
             <div className="container mx-auto flex items-center justify-between flex-wrap">
-                <div className="font-bold border-3 border-emerald-500 rounded-full w-16 lg:w-24 p-3 hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40">
+                <div className="font-bold border-3 border-emerald-500 rounded-full w-16 lg:w-24 hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40">
                     <img src={Logo} 
                         alt="Logo VP Websites" 
                         width="60" 
                         height="60" 
                         fetchPriority="high" 
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain rounded-full"
                     />
                 </div>
 
