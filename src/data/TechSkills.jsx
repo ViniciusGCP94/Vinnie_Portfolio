@@ -11,7 +11,10 @@ import {
     SiVite,
     SiDatabricks,
     SiGmail,
-    SiLinkedin
+    SiLinkedin,
+    SiNodedotjs,
+    SiExpress,
+    SiPostman
 } from "react-icons/si";
 import { 
     LuBrainCircuit,
@@ -39,4 +42,7 @@ export const TechSkills = [
     { ID: 15, name: "credit-card", icon: LuCreditCard },
     { ID: 16, name: "Gmail", icon: SiGmail },
     { ID: 17, name: "Linkedin", icon: SiLinkedin },
+    { ID: 18, name: "Node.JS", icon: SiNodedotjs },
+    { ID: 19, name: "Express.JS", icon: SiExpress },
+    { ID: 20, name: "Postman", icon: SiPostman }
 ];
