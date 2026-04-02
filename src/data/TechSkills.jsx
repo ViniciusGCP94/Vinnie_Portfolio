@@ -11,7 +11,8 @@ import {
     SiVite,
     SiDatabricks,
     SiGmail,
-    SiLinkedin
+    SiLinkedin,
+    SiPostgresql
 } from "react-icons/si";
 import { 
     LuBrainCircuit,
@@ -20,6 +21,12 @@ import {
     LuShieldCheck
 
  } from "react-icons/lu";
+import { 
+    TbApi,
+    TbSchema,
+    TbSql,
+    TbDatabase
+ } from "react-icons/tb";
 
 export const TechSkills = [
     { ID: 1, name: "html5", icon: SiHtml5 },
@@ -39,4 +46,9 @@ export const TechSkills = [
     { ID: 15, name: "credit-card", icon: LuCreditCard },
     { ID: 16, name: "Gmail", icon: SiGmail },
     { ID: 17, name: "Linkedin", icon: SiLinkedin },
+    { ID: 18, name: "API-REST", icon: TbApi },
+    { ID: 19, name: "Schema", icon: TbSchema },
+    { ID: 20, name: "PostgreSQL", icon: SiPostgresql },
+    { ID: 21, name: "SQL", icon: TbSql },
+    { ID: 22, name: "Database", icon: TbDatabase },
 ];
