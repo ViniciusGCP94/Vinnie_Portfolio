@@ -16,7 +16,8 @@ import {
     SiExpress,
     SiNodedotjs,
     SiPostman,
-    SiSass
+    SiSass,
+    SiReactrouter 
 } from "react-icons/si";
 import { 
     LuBrainCircuit,
@@ -58,5 +59,6 @@ export const TechSkills = [
     { ID: 18, name: "Node-js", icon: SiNodedotjs },
     { ID: 19, name: "Express-js", icon: SiExpress },
     { ID: 20, name: "Postman", icon: SiPostman },
-    { ID: 21, name: "SCSS", icon: SiSass }
+    { ID: 21, name: "SCSS", icon: SiSass },
+    { ID: 22, name: "React-Router", icon: SiReactrouter }
 ];
