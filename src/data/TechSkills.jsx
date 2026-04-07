@@ -15,7 +15,8 @@ import {
     SiPostgresql,
     SiExpress,
     SiNodedotjs,
-    SiPostman
+    SiPostman,
+    SiSass
 } from "react-icons/si";
 import { 
     LuBrainCircuit,
@@ -56,5 +57,6 @@ export const TechSkills = [
     { ID: 22, name: "Database", icon: TbDatabase },
     { ID: 18, name: "Node-js", icon: SiNodedotjs },
     { ID: 19, name: "Express-js", icon: SiExpress },
-    { ID: 20, name: "Postman", icon: SiPostman }
+    { ID: 20, name: "Postman", icon: SiPostman },
+    { ID: 21, name: "SCSS", icon: SiSass }
 ];
