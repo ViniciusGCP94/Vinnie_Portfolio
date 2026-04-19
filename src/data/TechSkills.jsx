@@ -18,7 +18,6 @@ import {
     SiNodedotjs,
     SiPostman,
     SiSass,
-    SiReactrouter 
 } from "react-icons/si";
 import { 
     LuBrainCircuit,
