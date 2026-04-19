@@ -62,11 +62,6 @@ export const TechSkills = [
     { ID: 18, name: "Node-js", icon: SiNodedotjs },
     { ID: 19, name: "Express-js", icon: SiExpress },
     { ID: 20, name: "Postman", icon: SiPostman },
-<<<<<<< HEAD
-    { ID: 21, name: "React-Router", icon: SiReactrouter },
-    { ID: 22, name: "SCSS", icon: BsFiletypeScss },
-=======
     { ID: 21, name: "SCSS", icon: SiSass },
     { ID: 22, name: "React-Router", icon: SiReactrouter }
->>>>>>> 2c940685bb9111159c76562490334887423267bf
 ];
