@@ -32,8 +32,6 @@ import {
     TbSql,
     TbDatabase
  } from "react-icons/tb";
- import { BsFiletypeScss } from "react-icons/bs";
-
 
 export const TechSkills = [
     { ID: 1, name: "html5", icon: SiHtml5 },
