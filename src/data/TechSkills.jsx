@@ -1,5 +1,6 @@
 import {
     SiReact,
+    SiReactrouter,
     SiTailwindcss,
     SiGit,
     SiCss3,
@@ -30,6 +31,8 @@ import {
     TbSql,
     TbDatabase
  } from "react-icons/tb";
+ import { BsFiletypeScss } from "react-icons/bs";
+
 
 export const TechSkills = [
     { ID: 1, name: "html5", icon: SiHtml5 },
@@ -56,5 +59,7 @@ export const TechSkills = [
     { ID: 22, name: "Database", icon: TbDatabase },
     { ID: 18, name: "Node-js", icon: SiNodedotjs },
     { ID: 19, name: "Express-js", icon: SiExpress },
-    { ID: 20, name: "Postman", icon: SiPostman }
+    { ID: 20, name: "Postman", icon: SiPostman },
+    { ID: 21, name: "React-Router", icon: SiReactrouter },
+    { ID: 22, name: "SCSS", icon: BsFiletypeScss },
 ];

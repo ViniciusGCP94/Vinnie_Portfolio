@@ -1,6 +1,7 @@
 import { useState } from "react";
-import {Github,Linkedin, Download, Menu} from 'lucide-react'
-import Logo from '../../assets/images/Logo-VP-Quadrado.webp'
+import {Github,Linkedin, Download, Menu} from 'lucide-react';
+import Logo from '../../assets/images/Logo-VP-Quadrado.webp';
+import Botao from '../common/Button/Button'
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,14 +79,31 @@ const ResponsiveNavbar = () => {
                         </a>
                     </div>
                     <div className="flex text-left text-lg gap-x-5 lg:hidden">
-                        <a className="p-2 border-1 rounded-full bg-black border-white"><Github size={28} color="white" /></a>
-                        <a className="p-2 border-1 rounded-lg bg-blue-400 border-blue-400 "><Linkedin size={28} color="#d1d5db" /></a>
+                        <Botao 
+                            href="https://github.com/ViniciusGCP94" 
+                            target="_blank" 
+                            rel="noreferrer"
+                            icon={Github}
+                            className=""
+                        />
+
+                        <Botao 
+                            href="https://www.linkedin.com/in/vinicius-gcp/" 
+                            target="_blank" 
+                            rel="noreferrer"
+                            icon={Linkedin}
+                            className=""
+                        />
                     </div>
                     <div>
-                        <button className="w-2/3 flex justify-center items-center gap-x-2 border-2 border-emerald-500 rounded-lg px-6 py-3 md:w-64 font-bold hover:bg-emerald-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/50 hover:-translate-y-0.5">
-                            Download Curriculo
-                            <Download size={22} />
-                        </button>
+                        <Botao
+                            href="/docs/curriculo_Vinicius_Pereira-Desenvolvimento_Fullstack_Javascript.docx.pdf" 
+                            download="Curriculo_Vinicius_Pereira.pdf"
+                            icon={Download}
+                            className="text-center text-xs lg:text-md px-4 py-4 w-auto justify-center">
+                                Download Curriculo
+                                <Download size={22} />
+                        </Botao>
                     </div>
                 </div>
             </div>
