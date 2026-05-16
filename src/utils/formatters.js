@@ -8,7 +8,7 @@ export const formatRepoTitle = (repoName) => {
 
 
 export const getProjectImageUrl = (repoName) => {
-    return `https://raw.githubusercontent.com/ViniciusGCP94/${repoName}/main/capa.png`;
+    return `https://raw.githubusercontent.com/ViniciusGCP94/${repoName}/main/capa.webp`;
 };
 
 export const PLACEHOLDER_IMAGE = 'https://placehold.co/400x225?text=Sem+Capa';
