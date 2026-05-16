@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SkillCard = ({ skillName, icon: Icon  }) => {
   
   if (!Icon) {
