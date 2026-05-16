@@ -11,4 +11,4 @@ export const getProjectImageUrl = (repoName) => {
     return `https://raw.githubusercontent.com/ViniciusGCP94/${repoName}/main/capa.png`;
 };
 
-export const PLACEHOLDER_IMAGE = 'https://via.placeholder.com/400x225?text=Sem+Capa';
+export const PLACEHOLDER_IMAGE = 'https://placehold.co/400x225?text=Sem+Capa';
