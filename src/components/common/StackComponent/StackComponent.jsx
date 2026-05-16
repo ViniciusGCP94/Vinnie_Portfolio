@@ -1,4 +1,3 @@
-import React from 'react';
 import TechCard from '../../SkillsCard/SkillsCard.jsx';
 import { TechSkills } from '../../../data/TechSkills.jsx'; 
 

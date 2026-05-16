@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Avatar from '../../ViniciusAvatar/Vinicius'
 
 const Hero = () => {
-    const words = ['Front-End', 'Web', 'JavaScript'];
+    const words = ['Full Stack', 'Web', 'JavaScript'];
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
     useEffect(() => {
